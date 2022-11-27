@@ -1,0 +1,58 @@
+<html>
+<head>
+<style>
+#div
+{
+display:none;
+}
+#div1
+{
+display:none;
+}
+</style>
+<body>
+<script>
+function demo()
+{
+var x=document.getElementById("div")
+.style.display="block"
+}
+</script>
+<script>
+function demo1()
+{
+var x=document.getElementById("div1")
+x.style.display="block"
+}
+</script>
+</head>
+<body>
+<button onclick="demo()"style="color:red;">LOGIN 
+<h3 id="div" style="display:none">Login Form
+<form>
+UserName:
+<input type="text"placeholder="Enter your name"/><br><br>
+Password:
+<input type="text"placeholder="Enter your password"/><br><br>
+<input type="submit"value="Save"style="color:white;background:maroon;border-radius:10px;margin-left:200px;"/>
+</form>
+</h3>
+</button>
+<button onclick="demo1()"style="color:red;"> REGESITER
+<h3 id="div1" style="display:none">Regesiter Form
+<form>
+Name:
+<input type="text"placeholder="Enter your name"/><br><br>
+Email:
+<input type="text"placeholder="Enter your password"/><br><br>
+password:
+<input type="text"placeholder="Enter your password"/><br><br>
+Mobile no:
+<input type="text"placeholder="Enter your password"/><br><br>
+<input type="submit"value="Save"style="color:white;background:maroon;border-radius:10px;margin-left:200px;"/>
+</form>
+</h3>
+</button>
+</button>
+</body>
+</html>
