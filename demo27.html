@@ -1,0 +1,90 @@
+<html>
+<head>
+<style>
+#box
+{
+height:400px;
+width:400px;
+border:5px solid blue;
+border-radius:20px;
+margin:auto;
+padding-top:25px;
+padding-left:20px;
+}
+.btn
+{
+height:65px;
+width:75px;
+margin-top:50px;
+color:blue;
+font-size:42px;
+background:linear-gradient(45deg,red,yellow);
+margin-left:12px;
+line-height:60px;
+border-radius:20px;
+border:2px solid purple;
+}
+#txt
+{
+border-radius:8px;
+border:3px solid green;
+font-size:25px;
+}
+#txt2
+{
+border-radius:8px;
+border:3px solid green;
+font-size:25px;
+}
+#txt1
+{
+border-radius:8px;
+border:3px solid green;
+font-size:25px;
+
+}
+</style>
+</head>
+<body>
+<h1 style="text-align:center;text-shadow:2px 2px 7px maroon;">MATHEMATIC CALCULATER</h1>
+<div id="box">
+<input type="text" placeholder="Enter your first number..." id="txt" style="height:45px;width:360px;"/><br><br><br>
+<input type="text"placeholder="Enter your second number..." id="txt1"  style="height:45px;width:360px;"/><br><br><br>
+<input type="text"placeholder="Your score..." id="txt2" style="height:45px;width:200px;"/><br><br><br>
+<button class="btn"onclick="demo()">+</button>
+<button class="btn"onclick="demo1()">-</button>
+<button class="btn"onclick="demo2()">*</button>
+<button class="btn"onclick="demo3()">/</button>
+<div>
+<script>
+var demo=()=>
+{
+var num1=document.getElementById("txt").value
+var num2=document.getElementById("txt1").value
+var res=parseInt(num1)+parseInt(num2)
+txt2.value=res
+}
+function demo1()
+{
+var num1=document.getElementById("txt").value
+var num2=document.getElementById("txt1").value
+var res=parseInt(num1)-parseInt(num2)
+txt2.value=res
+}
+function demo2()
+{
+var num1=document.getElementById("txt").value
+var num2=document.getElementById("txt1").value
+var res=parseInt(num1)*parseInt(num2)
+txt2.value=res
+}
+function demo3()
+{
+var num1=document.getElementById("txt").value
+var num2=document.getElementById("txt1").value
+var res=parseInt(num1)/parseInt(num2)
+txt2.value=res
+}
+</script>
+</body>
+</html>
